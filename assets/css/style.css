@@ -137,6 +137,10 @@ header {
   background-color: var(--color-bg-secondary);
 }
 
+.navbar-brand img {
+  width: 250px;
+}
+
 .navbar-toggler {
   padding: 4px 5px;
   box-shadow: 1px -1px 10px 1px rgb(100, 100, 100);
@@ -941,6 +945,9 @@ select:focus {
 .footer-container {
   padding-bottom: 30px;
 }
+.footer-logo {
+  width: 300px;
+}
 
 .footer-section .brand-name {
   font-size: 30px;
@@ -1360,6 +1367,11 @@ select:focus {
 
   .footer-section a {
     text-align: center !important;
+  }
+
+  .footer-logo {
+    width: 250px;
+    margin: auto;
   }
 
   .footer-section .brand-name {

@@ -101,8 +101,9 @@ p {
 }
 
 .hr-line {
-  border-bottom: 1px solid #f3d1bf;
-  border-radius: 5px;
+  /* border-bottom: 1px solid #f3d1bf ; */
+  /* border-radius: 5px; */
+  border-top: 1px solid #f3d1bf;
 }
 
 @media (max-width: 1200px) {
@@ -173,8 +174,9 @@ header .btn:hover {
 /* Hero Section Start */
 .hero-section {
   background-color: var(--color-bg-secondary);
-  height: calc(100dvh - 70px);
+  /* height: calc(100dvh - 70px); */
   min-height: 650px;
+  height: 100dvh;
   position: relative;
   z-index: 2;
 }
@@ -251,6 +253,73 @@ header .btn:hover {
 }
 
 /* Hero Section End */
+
+/* Services Section Start */
+.services-section .service {
+  text-align: center;
+  border-radius: 7px;
+  border: 1px solid #f3d1bf;
+  padding: 30px;
+  /* margin-top: 100px;
+  padding-top: 100px; */
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.services-section .service:hover {
+  box-shadow: 0 0 10px 1px grey;
+  background-color: var(--color-secondary);
+}
+.services-section .service .service-icon {
+  margin-bottom: 20px;
+}
+/* .services-section .sticky-icon{
+  position: absolute;
+  top: -30%;
+  left: 30%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #f3d1bf;
+  background-color: var(--color-primary);
+} */
+.services-section .sticky-icon img {
+  width: 90%;
+  height: auto;
+}
+.services-section .service .service-icon img {
+  width: auto;
+  max-height: 200px;
+  margin: auto;
+}
+
+.services-section .service .title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  color: var(--color-text-secondary);
+  margin-bottom: 10px;
+}
+.services-section .service .section-description {
+  margin-bottom: 20px;
+}
+
+.services-section .btn {
+  background-color: var(--color-primary);
+  border: 1px solid transparent;
+
+  color: var(--color-text-primary);
+}
+
+.services-section .btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+/* Services Section End */
 
 /* Client Section Start */
 .client-section img {
@@ -520,6 +589,9 @@ header .btn:hover {
 /* Portfolio Section End */
 
 /* Get Started Section Start */
+.get-started-section {
+  background-color: var(--color-bg-secondary);
+}
 .get-started-section .wrapper {
   background-color: var(--color-bg-primary);
   border-radius: 7px;
@@ -557,8 +629,8 @@ header .btn:hover {
 
 .get-started-section .btn:hover {
   background-color: transparent;
-  color: var(--color-text-primary);
-  border: 1px solid var(--color-neutral);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 .get-started-section img.girl {
@@ -832,7 +904,6 @@ header .btn:hover {
 .contact-section {
   position: relative;
   height: 100%;
-  height: 550px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -863,7 +934,7 @@ form div {
 
 .form-container {
   background-color: var(--color-secondary);
-  padding: 50px 40px;
+  padding: 40px;
   border-radius: 6px;
   z-index: 2;
 }
@@ -931,7 +1002,7 @@ select:focus {
 
 .form-container .btn:hover {
   background-color: transparent;
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }
 
@@ -1261,6 +1332,9 @@ select:focus {
 
 /* Mobile phones */
 @media (max-width: 768px) {
+  .navbar-brand img {
+    width: 200px;
+  }
   .hero-section img {
     max-width: 95%;
   }
@@ -1338,8 +1412,12 @@ select:focus {
   }
 
   .pricing-section .price-card {
-    padding: 35px;
-    border-radius: 0;
+    padding: 25px;
+    border-radius: 7px solid #f3d1f3;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
   }
 
   .pricing-section .col-sm-4:first-of-type .price-card {
